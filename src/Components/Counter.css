@@ -1,0 +1,91 @@
+.SK-Section{
+    position: relative;
+    background-color: rgb(70, 143, 188);
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+.SK-Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.SK-Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+button{
+    background-color: rgb(86, 76, 104);
+    color: white;
+    padding: 12px 15px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    transition: .5s;
+    cursor: pointer;
+}
+p{
+    margin: 25px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 1.6;
+}
+.SK-Popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); 
+    width: 500px;
+    height: 350px;
+    background-color: white;
+    box-shadow: 0px 1px 20px 2px rgb(172, 165, 165);
+}
+.SK-Popup button{
+    background-color: black;
+    padding: 12px 15px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+.SK-Popup button:hover{
+    transition: .5s;
+    cursor: pointer;
+}
+
+@media (max-width:576px){
+    .SK-Popup {
+        width: 70%;
+    }
+    .SK-Popup button{
+        margin-bottom: 40px;
+    }
+    p{
+        font-size: 25px;
+    }
+    .container button {
+        font-size: 20px;
+        margin-bottom: 20px;
+    } 
+
+}
